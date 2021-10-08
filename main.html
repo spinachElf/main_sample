@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+	body{
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+		background: black;
+		font-family: "Noto Sans KR", sans-serif;
+	}
+	.main{
+		width: 100%;
+		height: 100vh;
+		position: relative;
+	}
+	.mono{
+		position: absolute;
+		z-index: 1;
+	}
+	.color{
+		position: absolute;
+		z-index: 99;
+		opacity: 0;
+	}
+	.color:hover{
+		opacity: 1;
+		transition-duration: 0.5s;
+	}
+	.plant1{
+		width: calc(367/1920*100%);
+		left: calc(83/1920*100%);
+		top: calc(212/1080*100%);
+	}
+	.plant2{
+		width: calc(605/1920*100%);
+		left: calc(385/1920*100%);
+		top: calc(546/1080*100%);
+		transform: rotate(4deg);
+	}
+	.plant3{
+		width: calc(494/1920*100%);
+		left: calc(597/1920*100%);
+		top: calc(76/1080*100%);
+		transform: rotate(-19deg);
+	}
+	.plant4{
+		width: calc(294/1920*100%);
+		left: calc(1099/1920*100%);
+		top: calc(191/1080*100%);
+		transform: rotate(-133deg);
+	}
+	.plant5{
+		width: calc(644/1920*100%);
+		left: calc(1190/1920*100%);
+		top: calc(701/1080*100%);
+		transform: rotate(-21deg);
+	}
+	.plant6{
+		width: calc(514/1920*100%);
+		left: calc(1308/1920*100%);
+		top: calc(125/1080*100%);
+		transform: rotate(-45deg);
+	}
+	.title{
+		position: fixed;
+		width: calc(441/1920*100%);
+		left: calc(21/1920*100%);
+		top: calc(21/1080*100%);
+		z-index: -4;
+	}
+	.summary{
+		z-index: 999;
+		width: 1000px;
+		height: 200vh;
+		margin: auto;
+		padding: 0;
+		background: gray;
+	}
+	nav{
+		width: 1000px;
+		margin: auto;
+		height: 50px;
+		background: black;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: sticky;
+		top: 0;
+		line-height: 50px;
+	}
+	nav li a:hover{
+		background: linear-gradient(#06afe7, 85%, black);
+		color: black;
+	}
+	h1{
+		font-size: 20px;
+	}
+	h1 a{
+		padding: 0;
+		text-decoration: none;
+		color: white;
+	}
+	li a{
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		padding: 0 10px;
+	}
+	ul{
+		display: flex;
+		gap: 15px;
+	}
+	ul li{
+		list-style-type: none;
+		display: block;
+	}
+</style>
+<body>
+	<section class="main">
+		<a href=""><img src="title.png" class="title"></a>
+		<img src="plant1_mono.png" class="mono plant1">
+		<a href=""><img src="plant1.png" class="color plant1"></a>
+		<img src="plant2_mono.png" class="mono plant2">
+		<a href=""><img src="plant2.png" class="color plant2"></a>
+		<img src="plant3_mono.png" class="mono plant3">
+		<a href=""><img src="plant3.png" class="color plant3"></a>
+		<img src="plant4_mono.png" class="mono plant4">
+		<a href=""><img src="plant4.png" class="color plant4"></a>
+		<img src="plant5_mono.png" class="mono plant5">
+		<a href=""><img src="plant5.png" class="color plant5"></a>
+		<img src="plant6_mono.png" class="mono plant6">
+		<a href=""><img src="plant6.png" class="color plant6"></a>		
+	</section>
+	<section class="summary">
+		<nav>
+			<h1 class="logo"><a href="">VISUAL GARDENER</a></h1>
+			<ul>
+				<li><a href="">project</a></li>
+				<li><a href="">gardener</a></li>
+			</ul>
+		</nav>
+	</section>
+</body>
+</html>
